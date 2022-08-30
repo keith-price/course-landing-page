@@ -18,30 +18,99 @@
 html,
 body {
   height: 100%;
+  font-family: var(--main-font);
+  color: #fff;
 }
 
 #hero {
   display: flex;
 
-  height: 100vh;
+  min-height: 100%;
   width: 100vw;
 }
 
 #left {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: var(--dark-blue);
-  width: 40%;
+  width: 45%;
+}
+
+#left-title h1 {
+  font-size: 60px;
+  line-height: 55px;
+  letter-spacing: 0.05em;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+#left-title p {
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  font-weight: 200;
+  
+}
+
+#left-button {
+  padding: 20px 30px;
+  align-self: flex-start;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: #fff;
+  color: rgba(30, 63, 128, 0.88);
+  border-style: none;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.05em;
+}
+
+#video-embed {
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.diskon {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+#left-cta {
+  font-size: 22px;
+  font-weight: 200;
+  letter-spacing: 0.03em;
 }
 
 #right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(
       0deg,
-      rgb(30, 63, 128, 0.55),
-      rgb(30, 63, 128, 0.55)
+      rgb(30, 98, 232, 0.64),
+      rgb(30, 98, 232, 0.64)
     ),
     url("public/pexels-antoni-shkraba-6266980.jpg");
 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 60%;
+  width: 55%;
+}
+
+#right-box {
+  height: 80%;
+  width: 100%;
+  border: 2px solid white;
+  margin: 50px;
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.25);
+}
+
+#video-embed {
+  border-style: none;
 }
