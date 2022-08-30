@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --dark-blue: #1e3f80;
+  --light-blue-overlay: #1e62e8 64%;
+  --light-blue-text: #1e3f80 88%;
+  --main-font: "Source Sans 3", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background: var(--dark-blue);
+}
