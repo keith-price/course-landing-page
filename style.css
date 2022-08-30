@@ -17,7 +17,31 @@
 
 html,
 body {
+  height: 100%;
+}
+
+#hero {
+  display: flex;
+
   height: 100vh;
   width: 100vw;
-  background: var(--dark-blue);
+}
+
+#left {
+  background-color: var(--dark-blue);
+  width: 40%;
+}
+
+#right {
+  background-image: linear-gradient(
+      0deg,
+      rgb(30, 63, 128, 0.55),
+      rgb(30, 63, 128, 0.55)
+    ),
+    url("public/pexels-antoni-shkraba-6266980.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 60%;
 }
