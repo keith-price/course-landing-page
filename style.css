@@ -267,6 +267,11 @@ a {
     font-size: 40px;
   }
 
+  #left-title p {
+    font-size: 20px;
+
+  }
+
   #right {
     width: 100%;
   }
@@ -274,6 +279,7 @@ a {
   #video-embed {
     max-width: 75%;
   }
+}
 
   /* mobile */
   @media (max-width: 768px) {
@@ -298,14 +304,21 @@ a {
 
   @media (max-width: 425px) {
     #left {
-      padding: 20px 20px;
+      padding: 18px 18px;
     }
 
     #left-title h1 {
       font-size: 30px;
       line-height: 30px;
+      margin-bottom: 15px;
     }
-  }
+
+    #left-title p {
+      font-size: 15px;
+      line-height: 20px;
+  
+    }
+  
 
   #right-box {
     height: 100%;
