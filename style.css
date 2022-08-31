@@ -197,10 +197,6 @@ a {
     text-align: center;
   }
 
-  #right {
-    width: 100%;
-  }
-
   #left-title h1 {
     line-height: 45px;
     font-size: 45px;
@@ -220,6 +216,10 @@ a {
     font-size: 18px;
   }
 
+  #right {
+    width: 100%;
+  }
+
   #right-box {
     height: 90%;
     margin: 30px;
@@ -227,15 +227,17 @@ a {
   }
 
   #right-title {
+    margin-bottom: 50px;
     font-size: 45px;
+  }
+
+  .diskon-right {
+    margin-top: 20px;
+    font-size: 30px;
   }
 
   #right-box-paragraph {
     font-size: 18px;
-  }
-
-  .diskon-right {
-    font-size: 30px;
   }
 
   .button {
@@ -245,8 +247,7 @@ a {
   }
 
   #video-embed {
-    margin: 0 auto;
-    max-width: 75%;
+    max-width: 60%;
   }
 }
 
@@ -268,5 +269,57 @@ a {
 
   #right {
     width: 100%;
+  }
+
+  #video-embed {
+    max-width: 75%;
+  }
+
+  /* mobile */
+  @media (max-width: 768px) {
+    #right-box {
+      height: 90%;
+      margin: 15px;
+      padding: 100px 20px;
+      justify-content: space-between;
+    }
+
+    #right-box-paragraph {
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.05em;
+      font-weight: 400;
+    }
+
+    #video-embed {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 425px) {
+    #left {
+      padding: 20px 20px;
+    }
+
+    #left-title h1 {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  #right-box {
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+  }
+
+  #right-title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .diskon-right {
+    font-weight: 900;
+    font-size: 25px;
   }
 }
