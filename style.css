@@ -57,9 +57,11 @@ a {
   line-height: 30px;
   letter-spacing: 0.05em;
   font-weight: 200;
+  margin-bottom: 20px;
 }
 
 .button {
+  margin-top: 20px;
   padding: 20px 30px;
   align-self: flex-start;
   font-size: 25px;
@@ -91,6 +93,7 @@ a {
   box-shadow: var(--main-box-shadow);
   margin: 0 auto;
   width: 100%;
+  border-style: none;
 }
 
 .diskon {
@@ -153,6 +156,117 @@ a {
   font-size: 32px;
 }
 
-#video-embed {
-  border-style: none;
+/* 1500px large laptop and desktop*/
+@media (max-width: 1500px) {
+  #left {
+    width: 40%;
+  }
+
+  #right {
+    width: 60%;
+  }
+
+  #left-title h1 {
+    font-size: 52.5px;
+    margin-bottom: 28px;
+  }
+
+  #left-title p {
+    font-size: 25px;
+    margin-bottom: 18px;
+  }
+
+  .diskon {
+    font-size: 22.5px;
+  }
+
+  #left-cta {
+    font-size: 20px;
+  }
+}
+
+/* 1200px laptop*/
+@media (max-width: 1200px) {
+  #hero {
+    flex-direction: column;
+  }
+
+  #left {
+    padding: 25px 50px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #right {
+    width: 100%;
+  }
+
+  #left-title h1 {
+    line-height: 45px;
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+
+  #left-title p {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .diskon {
+    font-size: 20px;
+  }
+
+  #left-cta {
+    font-size: 18px;
+  }
+
+  #right-box {
+    height: 90%;
+    margin: 30px;
+    padding: 160px 20px;
+  }
+
+  #right-title {
+    font-size: 45px;
+  }
+
+  #right-box-paragraph {
+    font-size: 18px;
+  }
+
+  .diskon-right {
+    font-size: 30px;
+  }
+
+  .button {
+    margin-top: 15px;
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+
+  #video-embed {
+    margin: 0 auto;
+    max-width: 75%;
+  }
+}
+
+/* tablets */
+@media (max-width: 992px) {
+  #hero {
+    flex-direction: column;
+  }
+
+  #left {
+    padding: 25px 50px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #left-title h1 {
+    font-size: 40px;
+  }
+
+  #right {
+    width: 100%;
+  }
 }
